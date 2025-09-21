@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MySmartStudy - Government of Jharkhand Academic Portal">
+    <title>MySmartStudy - Government of Jharkhand Academic Portal</title>
+    
+    <!-- Professional Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Inter', 'system-ui', 'sans-serif'],
+              'display': ['Poppins', 'system-ui', 'sans-serif']
+            },
+            colors: {
+              'brand': {
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                200: '#bbf7d0',
+                300: '#86efac',
+                400: '#4ade80',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+                800: '#166534',
+                900: '#14532d'
+              },
+              'jharkhand': {
+                50: '#fef7ee',
+                100: '#fdebd3',
+                200: '#fad3a5',
+                300: '#f6b46d',
+                400: '#f18b33',
+                500: '#ed6b0e',
+                600: '#de5209',
+                700: '#b83c0b',
+                800: '#932f10',
+                900: '#772810'
+              }
+            },
+            animation: {
+              'slide-in': 'slideIn 0.3s ease-out',
+              'fade-in': 'fadeIn 0.2s ease-out'
+            },
+            keyframes: {
+              slideIn: {
+                '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                '100%': { transform: 'translateX(0)', opacity: '1' }
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <div id="root"></div>
+</body>
+</html>
